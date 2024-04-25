@@ -1,0 +1,23 @@
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.list {
+    list-style:georgian;
+}
+
+.list1 {
+    list-style:armenian;
+}
