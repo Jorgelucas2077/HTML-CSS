@@ -140,23 +140,23 @@
                     </div>
                     <div class="modal-body">
                       <form>
-                          <div class="mb-2">
-                            <label for="holder_name" class="form-label">Name
+                          <div class="mb-2 row">
+                            <label for="holder_name" class="form-label col">Name
                             </label>
-                            <input name="holder_name" type="text" class="form-control">
+                            <input name="holder_name" type="text" class="form-control col">
                           </div>
-                          <div class="mb-2"> <!--data-mdb-input-init class="form-outline mb-4"-->
-                            <label for="card_number" class="form-label">Card Number</label>
-                            <input name="expiration_date" type="text" class="form-control"/>
+                          <div class="mb-2 row"> <!--data-mdb-input-init class="form-outline mb-4"-->
+                            <label for="card_number" class="form-label col">Card Number</label>
+                            <input name="expiration_date" type="text" class="form-control col"/>
                             
                           </div>
-                          <div class="mb-2">
-                            <label for="expiration_date" class="form-label">Expiration date</label>
-                            <input name="expiration_date" type="text" class="form-control">
+                          <div class="mb-2 row">
+                            <label for="expiration_date" class="form-label col">Expiration date</label>
+                            <input name="expiration_date" type="text" class="form-control col">
                           </div>
-                          <div class="mb-2">
-                            <label for="cvv" class="form-label">CVV</label>
-                            <input name="cvv" type="text" class="form-control">
+                          <div class="mb-2 row">
+                            <label for="cvv" class="form-label col">CVV</label>
+                            <input name="cvv" type="text" class="form-control col">
                           </div>
                       </form>
                     </div>
@@ -227,15 +227,11 @@
                     </div>
                     <div class="modal-body">
                       <form>
-                          <div>
-                            <label for="holder_name" class="form-label">Name</label>
-                            <input name="holder_name" type="text" class="form-control">
+                          <div class="mb-2 row">
+                            <label for="holder_name" class="form-label col">Name</label>
+                            <input name="holder_name" type="text" class="form-control col">
                           </div>
                           <div data-mdb-input-init class="form-outline mb-4">
-                            <label class="form-label" for="password1">Card Number</label>
-                            <input type="password" id="password1" class="form-control"/>
-                          </div>
-                          <div>
                             <label for="expiration_date" class="form-label">Expiration date</label>
                             <input name="expiration_date" type="text" class="form-control">
                           </div>
@@ -305,17 +301,30 @@
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <div class="modal-header">
+                    <form action="mailto:to=test@test.com">
+                      <div class="modal-header">
                       <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+                        </div>
+                         <div class="modal-body">
+                        <div class="mb-2 row">
+                          <label for="holder_name" class="form-label col">Name</label>
+                          <input name="holder_name" type="text" class="form-control col">
+                        </div>
+                        <div data-mdb-input-init class="form-outline mb-4">
+                          <label for="expiration_date" class="form-label">Expiration date</label>
+                          <input name="expiration_date" type="text" class="form-control">
+                        </div>
+                        <div>
+                          <label for="cvv" class="form-label">CVV</label>
+                          <input name="cvv" type="text" class="form-control">
+                        </div>
+                    
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button submit" class="btn btn-primary">Save changes</button>
                   </div>
                 </div>
               </div>    
